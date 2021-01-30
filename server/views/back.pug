@@ -1,0 +1,81 @@
+extends layout
+
+block content
+    .container-fluid.col-md-10.p-0.bg-white.position-relative
+        .parallelogram.m-5.text-white
+            p.projectTitle.h2 BACKEND
+        .row.m-3.p-4.d-flex.justify-content-center
+            .card.card-project.mb-4
+                #proj1.carousel.slide(data-ride="carousel").card-img-top
+                    ol.carousel-indicators
+                        li(data-target="#proj1" data-slide-to="0" class="active")
+                        li(data-target="#proj1" data-slide-to="1")
+                        li(data-target="#proj1" data-slide-to="2")
+                    .carousel-inner
+                        .carousel-item.active
+                            img(src="./img/project.jpg" alt="PortfolioProject1").d-block.w-100
+                        .carousel-item
+                            img(src="./img/project1.png" alt="PortfolioProject2").d-block.w-100
+                        .carousel-item
+                            img(src="./img/iphone.png" alt="PortfolioProject3").d-block.w-100
+                .card-body
+                    h5.card-title.h3 Портфолио
+                    p.card-text Портфолио с анимацией, созданная на платформе Node.js, с использованием Boostrap и анимации. Проект адаптирован под десктопные и мобильные версии. На данном этапе проект направлен только на презентацию моих проектов. В дальнейшем планируется введение базы данных и личного кабинета для возможности оставлять комментарии, а также обратной связи через почту.
+                ul.list-group.list-group-flush
+                    li.list-group-item
+                        a(href="https://aurov.herokuapp.com/").card-link Ссылка на проект
+                    li.list-group-item
+                        a(href="https://github.com/AurovD/aurovdm").card-link Github проекта
+                    li.list-group-item
+                        a(href="#contacts").card-link Заказать свой проект
+            .card.card-project.mb-4
+                #proj2.carousel.slide(data-ride="carousel").card-img-top
+                    ol.carousel-indicators
+                        li(data-target="#proj2" data-slide-to="0" class="active")
+                        li(data-target="#proj2" data-slide-to="1")
+                        li(data-target="#proj2" data-slide-to="2")
+                    .carousel-inner
+                        .carousel-item.active
+                            img(src="./img/market3.png" alt="MarketProject3").d-block.w-100
+                        .carousel-item
+                            img(src="./img/market1.jpg" alt="MarketProject1").d-block.w-100
+                        .carousel-item
+                            img(src="./img/market2.jpg" alt="MarketProject2").d-block.w-100
+                .card-body
+                    h5.card-title.h3 Книжний магазин
+                    p.card-text Проект тестового книжного магазина основан на платформе Node.js. Проект является учебным и предусматривает тестирование работы с медиафайлами, главным образом с изображениями. Предусмотрен личный кабинет на основе localStorage, с возможностью запоминать историю заказов, корзину и комменариев пользователя. Аккаунт администратора имеет возможности добавления новых книг, редактирование существующих книг и модераторские возможности для редакции комментариев к книгам. В будущем планируется добавление в тестирующем варианте системы оплаты.
+                ul.list-group.list-group-flush
+                    li.list-group-item
+                        a(href="https://markebook.herokuapp.com/").card-link Ссылка на проект
+                    li.list-group-item
+                        a(href="https://github.com/AurovD/Portfolio/tree/master/bookMarket").card-link Github проекта
+                    li.list-group-item
+                        a(href="#contacts").card-link Заказать свой проект
+            .card.card-project.mb-4
+                #proj3.carousel.slide(data-ride="carousel").card-img-top
+                    .carousel-inner
+                        .carousel-item.active
+                            img(src="./img/scrap.jpg" alt="TaskManager").d-block.w-100
+                .card-body
+                    h5.card-title.h3 Task Manager
+                    p.card-text Проект тестового корпоративного планировщика задач. Проект является учебным и предусматривает тестирование работы с cookie и базой данных, с возможностью администратора(начальника) добавлять новые задачи для своих работников, с указазанием даты выполнения, и отслеживанием статуса их выполнения.
+                ul.list-group.list-group-flush
+                    li.list-group-item
+                        a(href="").card-link Ссылка на проект отсутсвует
+                    li.list-group-item
+                        a(href="https://github.com/AurovD/Portfolio/tree/master/TaskManager").card-link Github проекта
+                    li.list-group-item
+                        a(href="#contacts").card-link Заказать свой проект
+        .row.p-5.m-0.col-12.contacts.text-white#contacts
+            .contact-text.text-right.contact-text-line.h4 Контакты
+            .contact-text.text-right.contact-text-line tel: 8(926)541-13-08
+            .contact-text.text-right.contact-text-line e-mail: aurov_is18@ithub.ru
+            .contact-text.text-right.z-index-1000
+                a.mr-4(href="https://vk.com")
+                    img(src="./img/vk.svg" alt="vk" width="40px")
+                a.mr-4(href="https://github.com/AurovD")
+                    img(src="./img/git.svg" alt="git" width="40px")
+                a.mr-4(href="https://www.instagram.com/aurovdm/")
+                    img(src="./img/instagram.svg" alt="instagram" width="40px")
+                a(href="https://www.facebook.com/profile.php?id=100052364083518&ref=bookmarks")
+                    img(src="./img/fc.svg" alt="facebook" width="40px")

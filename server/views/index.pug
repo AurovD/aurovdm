@@ -1,0 +1,188 @@
+extends layout
+
+block content
+    .container-fluid.col-md-10.p-0.bg-white.position-relative
+        .row.m-0#home
+            .col-12.vh-100.p-md-5.p-sm-5.banner.text-white.z-index-1000.absbg
+                .text.position-absolute.text.z-index-1000
+                    h1.display-1.mx-xl-n4 Aurov Dmitry
+                    h2.display-4.mx-xl-5.text-warning FullStack Developer
+                a.but.z-index-1000.position-absolute.mb-5.text-center(href="./docs/CV.pdf" download) Скачать CV
+        .row.col-12.p-0.m-0.text-white.text-uppercase.lh.position-relative.boxes
+            .row.col-lg-6.m-0.p-0
+                .col-6.boxes-box.front.z-index-1000.absbg.animate-box.animated.bottom.d-flex.align-items-center.justify-content-center FrontEnd
+                .col-6.boxes-box.back.z-index-1000.absbg.animate-box.animated.bottom.d-flex.align-items-center.justify-content-center BackEnd
+            .row.col-lg-6.m-0.p-0
+                .col-6.boxes-box.ux.z-index-1000.absbg.animate-box.animated.bottom.d-flex.align-items-center.justify-content-center UX/UI
+                .col-6.boxes-box.des.z-index-1000.absbg.animate-box.animated.bottom.d-flex.align-items-center.justify-content-center Design
+        .row#about.p-0.m-0
+            .col-12.p-5
+                h2.animate-box.animated.mb-3.left.ad-2 Who am I?
+                p.animate-box.animated.mb-3.bottom.grey-box.p-4.position-relative.rounded.ad-2 Привет. Я Junior-разрабодчик, Аюров Дмитрий. В эту область я пришел из клинческой психологии, в какой-то момент заитересвавшись веб-разработкой. C 2017 года начал самостоятельно изучать HTML/CSS. В тот же год начал изучать основы программировния на Pascal. Чуть позже C и C++. Однако, самообучение имеет ряд ограничений.
+        .row.p-0.m-0.col-12.bg-secondary.education.z-index-1000.absbg.animate-box.animated.bottom.bannerSecond
+            .row.p-0.m-0#eduction.text-white
+                .col-12.p-5
+                    h2.animate-box.animated.mb-3.left.display-4.ad-2 Education
+        .accordion#accordion
+            .card
+                .card-header.position-relative.mgmsu.animate-box.animated.bottom#headingMgmsu
+                    h2.mb-0.pl-40px
+                        button.btn.btn-block.text-left(type="button" data-toggle="collapse" data-target="#collapseMgmsu" aria-expanded="true" aria-controls="collapseMgmsu")
+                            | Московский государственный медико-стоматологический университет имени А.И. Евдокимова #[br]
+                            strong Клиническая психология
+                #collapseMgmsu.collapse(aria-labelledby="headingMgmsu" data-parent="#accordion")
+                    .card-body.d-flex.flex-sm-row-reverse.flex-column-reverse
+                        picture
+                            source(media="(min-width:576px)" srcset="./img/me1.JPG")
+                            source(media="(max-width:575px)" srcset="./img/pgoto1.JPG")
+                            img.card-img(src="./img/pgoto1.JPG" alt="mgmsu" width="200px")
+                        .text-box.p-4.grey-box.position-relative
+                            p Факультет клинической психологии был открыт в структуре Московского государственного медико-стоматологического университета в 2001 году. Факультет готовит и выпускает специалистов с высшим профессиональным образованием по специальности 37.05.01 «Клиническая психология».
+                            p Область профессиональной деятельности выпускников Факультета включает исследовательскую и практическую деятельность в сфере клинической психологии. Она направлена на решение комплексных задач психологической диагностики, экспертизы и психологической помощи населению.
+                            p
+            .card
+                .card-header.position-relative.mgtu.animate-box.animated.bottom#headingMgtu
+                    h2.mb-0.pl-40px
+                        button.btn.btn-block.text-left(type="button" data-toggle="collapse" data-target="#collapseMgtu" aria-expanded="true" aria-controls="collapseMgtu")
+                            | Московский государственный технический университет им. Н. Э. Ба́умана (неоконч) #[br]
+                            strong Компьютерные системы и сети
+                #collapseMgtu.collapse(aria-labelledby="headingMgtu" data-parent="#accordion")
+                    .card-body.d-flex.flex-sm-row-reverse.flex-column-reverse
+                        picture
+                            source(media="(min-width:576px)" srcset="./img/me2.JPG")
+                            source(media="(max-width:575px)" srcset="./img/photo2.JPG")
+                            img.card-img(src="./img/me2.JPG" alt="mgtu" width="200px")
+                        .text-box.p-4.grey-box.position-relative
+                            p Кафедра «Компьютерные системы и сети», одна из ведущих кафедр факультета «Информатика и системы управления» МГТУ им. Н.Э. Баумана. На кафедре накоплен богатый научный и педагогический потенциал, работает коллектив опытных преподавателей, cоздана уникальная и современная лабораторная база, функционируют лаборатории Интернета вещей, Компьютерных систем, Облачных технологий, Сетевая лаборатория.
+                            p Скажем так, не самый удачный опыт. 
+            .card
+                .card-header.position-relative.ithub.animate-box.animated.bottom#headingIthub
+                    h2.mb-0.pl-40px
+                        button.btn.btn-block.text-left(type="button" data-toggle="collapse" data-target="#collapseIthub" aria-expanded="true" aria-controls="collapseIthub")
+                            | Колледж международного уровня IT HUB #[br]
+                            strong Веб- и мультимедийная разработка
+                #collapseIthub.collapse(aria-labelledby="headingIthub" data-parent="#accordion")
+                    .card-body.d-flex.flex-sm-row-reverse.flex-column-reverse
+                        picture
+                            source(media="(min-width:576px)" srcset="./img/mosgas.JPG")
+                            source(media="(max-width:575px)" srcset="./img/photo3.JPG")
+                            img.card-img(src="./img/mosgas.JPG" alt="mgtu" width="200px")
+                        .text-box.p-4.grey-box.position-relative
+                            p Веб-разработчик - это программист, который специализируется или специально занимается разработкой приложений для Всемирной паутины с использованием модели клиент-сервер. Приложения обычно используют HTML, CSS и JavaScript на клиенте, PHP, ASP.NET, Python или Java на сервере и http для связи между клиентом и сервером.
+            .card
+                .card-header.position-relative.sert.animate-box.animated.bottom#headingSert
+                    h2.mb-0.pl-40px
+                        button.btn.btn-block.text-left(type="button" data-toggle="collapse" data-target="#collapseSert" aria-expanded="true" aria-controls="collapseSert")
+                            strong  Сертификаты
+                #collapseSert.collapse(aria-labelledby="headingSert" data-parent="#accordion")
+                    .card-body
+                        img(src="./img/cert1.png" alt="cert1").cert-img.col-12.col-sm-4.mb-1
+                        img(src="./img/cert2.png" alt="cert2").cert-img.col-12.col-sm-4.mb-1
+                        img(src="./img/cert3.png" alt="cert3").cert-img.col-12.col-sm-4.mb-1
+        .row.p-0.m-0.col-12.bg-secondary.z-index-1000.absbg.animate-box.animated.bottom.bannerSecond.exp
+            .row.p-0.m-0.text-white#exp
+                .col-12.p-5
+                    h2.animate-box.animated.mb-3.left.display-4.ad-2 Experience
+        .row.p-0.m-0.col-12
+            .timeline.position-relative.mt-3
+                article.timeline-entry.position-relative.mb-3
+                    .timeline-entry-inner.position-relative
+                        .timeline-icon.profi.animate-box.animated.mb-3.left.ad-2
+                        .timeline-label.position-relative.animate-box.animated.right.ad-2
+                            .h2 Profil Sourcing
+                            .lead Ресечер(Ассистент менеджера по подбору персонала)
+                article.timeline-entry.position-relative.mb-3.animate-box.animated.right
+                    .timeline-entry-inner.position-relative
+                        .timeline-icon.croc.animate-box.animated.mb-3.left.ad-2
+                        .timeline-label.position-relative.animate-box.animated.right.ad-2
+                            .h2 ЗАО «КРОК инкорпорейтед»
+                            .lead Техник-тестировщик
+        .row.p-0.m-0.col-12.bg-secondary.z-index-1000.absbg.animate-box.animated.bottom.bannerSecond.skills
+            .row.p-0.m-0.text-white#skills
+                .col-12.p-5
+                    h2.animate-box.animated.mb-3.left.display-4.ad-2 Skills
+        .row.p-0.m-0.p-3
+            .col-md-6.mb-3.animate-box.animated.mb-3.left.ad-2
+                .progress-wrap
+                    .h3 HTML/CSS
+                        .progress
+                            .progress-bar.position-relative.rounded.darkblue(role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%")
+                                span.text-white 80%
+            .col-md-6.mb-3.animate-box.animated.right.ad-2
+                .progress-wrap
+                    .h3 JavaScript
+                        .progress
+                            .progress-bar.position-relative.rounded.darkblue(role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width:65%")
+                                span.text-white 65%
+            .col-md-6.mb-3.animate-box.animated.mb-3.left.ad-2
+                .progress-wrap
+                    .h3 Bootstrap
+                        .progress
+                            .progress-bar.position-relative.rounded.darkblue(role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:50%")
+                                span.text-white 50%
+            .col-md-6.mb-3.animate-box.animated.right.ad-2
+                .progress-wrap
+                    .h3 Python
+                        .progress
+                            .progress-bar.position-relative.rounded.darkblue(role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width:20%")
+                                span.text-white 20%
+            .col-md-6.mb-3.animate-box.animated.mb-3.left.ad-2
+                .progress-wrap
+                    .h3 Php
+                        .progress
+                            .progress-bar.position-relative.rounded.darkblue(role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width:20%")
+                                span.text-white 20%
+            .col-md-6.mb-3.animate-box.animated.mb-3.right.ad-2
+                .progress-wrap
+                    .h3 React
+                        .progress
+                            .progress-bar.position-relative.rounded.darkblue(role="progressbar" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100" style="width:15%")
+                                span.text-white 15%
+            .col-md-6.mb-3.animate-box.animated.left.ad-2
+                .progress-wrap
+                    .h3 Photoshop
+                        .progress
+                            .progress-bar.position-relative.rounded.darkblue(role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width:75%")
+                                span.text-white 75%
+            .col-md-6.mb-3.animate-box.animated.right.ad-2
+                .progress-wrap
+                    .h3 Figma
+                        .progress
+                            .progress-bar.position-relative.rounded.darkblue(role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%")
+                                span.text-white 80%
+            .col-md-6.mb-3.animate-box.animated.left.ad-2
+                .progress-wrap
+                    .h3 Illustrator
+                        .progress
+                            .progress-bar.position-relative.rounded.darkblue(role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width:10%")
+                                span.text-white 10%
+            .col-md-6.mb-3.animate-box.animated.right.ad-2
+                .progress-wrap
+                    .h3 Node.js
+                        .progress
+                            .progress-bar.position-relative.rounded.darkblue(role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:50%")
+                                span.text-white 50%
+        .row.col-12.p-0.m-0.text-uppercase.position-relative.boxes.projects#projects
+            .row.col-12.m-0.p-2.js.d-flex.justify-content-center
+                .col-xl-4.boxes-box.animate-box.animated.bottom.projects-items
+                    img.items-img(src="./img/ipad.png" alt="front")
+                    p.plashka FrontEnd
+                .col-xl-4.boxes-box.animate-box.animated.bottom.projects-items
+                    img.items-img(src="./img/project1.png" alt="back")
+                    p.plashka  BackEnd
+                .col-xl-4.boxes-box.animate-box.animated.bottom.projects-items
+                    img.items-img(src="./img/laptop.png" alt="ux")
+                    p.plashka Design
+        .row.p-5.m-0.col-12.contacts.text-white#contacts
+            .contact-text.text-right.contact-text-line.h4 Контакты
+            .contact-text.text-right.contact-text-line tel: 8(926)541-13-08
+            .contact-text.text-right.contact-text-line e-mail: aurov_is18@ithub.ru
+            .contact-text.text-right.z-index-1000
+                a.mr-4(href="https://vk.com")
+                    img(src="./img/vk.svg" alt="vk" width="40px")
+                a.mr-4(href="https://github.com/AurovD")
+                    img(src="./img/git.svg" alt="git" width="40px")
+                a.mr-4(href="https://www.instagram.com/aurovdm/")
+                    img(src="./img/instagram.svg" alt="instagram" width="40px")
+                a(href="https://www.facebook.com/profile.php?id=100052364083518&ref=bookmarks")
+                    img(src="./img/fc.svg" alt="facebook" width="40px")

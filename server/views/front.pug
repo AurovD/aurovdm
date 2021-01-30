@@ -1,0 +1,33 @@
+extends layout
+
+block content
+    .container-fluid.col-md-10.p-0.bg-white.position-relative
+        .parallelogram.m-5.text-white
+            p.projectTitle.h2 FRONTEND
+        .row.m-3.p-4.d-flex.justify-content-center
+            .card.card-project.mb-4
+                #proj1.carousel.slide(data-ride="carousel").card-img-top
+                    .carousel-inner
+                        .carousel-item.active
+                            img(src="./img/Zapret.jpg" alt="PortfolioProject1").d-block.w-100
+                .card-body
+                    h5.card-title.h3 Цитаты из книги «Запрет на себя»
+                    p.card-text Тестовая верста аккардеона, с динамической синей линей на всю высоту отдельного элемента.
+                ul.list-group.list-group-flush
+                    li.list-group-item
+                        a(href="https://github.com/AurovD/Portfolio/tree/master/ZapretNaSebya").card-link Github проекта
+                    li.list-group-item
+                        a(href="#contacts").card-link Заказать свой проект
+        .row.p-5.m-0.col-12.contacts.text-white#contacts
+            .contact-text.text-right.contact-text-line.h4 Контакты
+            .contact-text.text-right.contact-text-line tel: 8(926)541-13-08
+            .contact-text.text-right.contact-text-line e-mail: aurov_is18@ithub.ru
+            .contact-text.text-right.z-index-1000
+                a.mr-4(href="https://vk.com")
+                    img(src="./img/vk.svg" alt="vk" width="40px")
+                a.mr-4(href="https://github.com/AurovD")
+                    img(src="./img/git.svg" alt="git" width="40px")
+                a.mr-4(href="https://www.instagram.com/aurovdm/")
+                    img(src="./img/instagram.svg" alt="instagram" width="40px")
+                a(href="https://www.facebook.com/profile.php?id=100052364083518&ref=bookmarks")
+                    img(src="./img/fc.svg" alt="facebook" width="40px")

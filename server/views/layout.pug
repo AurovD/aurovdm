@@ -1,0 +1,46 @@
+doctype html
+html
+    head
+        title Portfolio
+        meta(charset="utf-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible" content="ie=edge")
+        link(rel='stylesheet', href='/style.css')
+        link(rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css")
+        link(rel="canonical" href="https://getbootstrap.com/docs/4.5/components/carousel/")
+        //link(href="/docs/4.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous")
+        script(src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous")
+    body.p-0.m-0
+        .podlozhka
+        .container-fluid
+            .row.flex-xl-nowrap
+                .col-md-2.bd-sidebar.position-sticky.bg-dark.navContainer
+                    .navbar.navbar-dark.bg-dark
+                        button.navbar-toggler.burger(type="button")
+                            span.navbar-toggler-icon
+                    .navList
+                        .rounded-circle.bg-light.m-auto.img-profile.photo
+                        h2.h2.text-center.text-white Aurov Dmitry
+                        h5.small.text-center.mb-5.text-white FullStack Developer
+                        ul.nav.flex-column.text-center
+                            li.nav-item
+                                a.nav-link(href="/") Home
+                            li.nav-item
+                                a.nav-link(href="/#about") About
+                            li.nav-item
+                                a.nav-link(href="/#eduction") Education
+                            li.nav-item
+                                a.nav-link(href="/#exp") Experience
+                            li.nav-item
+                                a.nav-link(href="/#skills") Skills
+                            li.nav-item
+                                a.nav-link(href="/#projects") Projects
+                            li.nav-item
+                                a.nav-link(href="/#contacts") Contacts
+                        footer.mt-5.text-center.text-white.mb-3 &copy; #{new Date().getFullYear()} <br>All rights reserved
+                block content
+        script(src="/js/main.js")
+        script(src="/assets/bootstrap/js/bootstrap.bundle.js")
+        script(src="/assets/bootstrap/js/bootstrap.bundle.min.js")
+        script(src="/assets/bootstrap/js/bootstrap.min.js")
+        script(src="/assets/bootstrap/js/bootstrap.js")
