@@ -10,4 +10,7 @@ const back = (req, res) => {
 const des = (req, res) => {
     res.render('design')
 };
-module.exports = {main, front, back, des};
+const form = (req, res) => {
+    res.render('form')
+};
+module.exports = {main, front, back, des, form};
