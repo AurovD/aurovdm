@@ -2,9 +2,9 @@ const express = require("express");
 const router = express.Router();
 const ctr = require("../controllers/index");
 router.get("/", ctr.main);
-router.get("/FRONTEND", ctr.front);
-router.get("/BACKEND", ctr.back);
-router.get("/DESIGN", ctr.des);
+router.get("/front", ctr.front);
+router.get("/back", ctr.back);
+router.get("/design", ctr.des);
 router.get("/form", ctr.form);
 
 

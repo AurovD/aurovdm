@@ -37,13 +37,13 @@ for (let box of document.querySelectorAll('.right')) {
     }, {threshold: [0.8]});
     observer.observe(box);
 }
-let projects = document.querySelectorAll(".projects-items");
-let plashka= document.querySelectorAll(".plashka");
-projects.forEach((pr, i) => {
-    pr.addEventListener("click", (event) => {
-        location.replace(`/${plashka[i].innerText}`);
-    })
-});
+// let projects = document.querySelectorAll(".projects-items");
+// let plashka= document.querySelectorAll(".plashka");
+// projects.forEach((pr, i) => {
+//     pr.addEventListener("click", (event) => {
+//         location.replace(`/${plashka[i].innerText}`);
+//     })
+// });
 
 let certs = document.querySelectorAll(".cert-img");
 let podlozhka = document.querySelector(".podlozhka");
