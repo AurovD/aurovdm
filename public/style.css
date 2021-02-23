@@ -482,3 +482,10 @@ div .dark-blue {
         width: 100%;
     }
 }
+
+.addProject {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}

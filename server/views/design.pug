@@ -28,17 +28,18 @@ block content
                         a(href="#contacts").card-link Заказать свой проект
             .card.card-project.mb-4
                 #proj3.carousel.slide(data-ride="carousel").card-img-top
+                    ol.carousel-indicators
+                        li(data-target="#proj3" data-slide-to="0" class="active")
+                        li(data-target="#proj3" data-slide-to="1")
                     .carousel-inner
                         .carousel-item.active
-                            img(src="./img/scrap.jpg" alt="TaskManager").d-block.w-100.cert-img
+                            img(src="./img/визиткаFront.png" alt="businessCard").d-block.w-100
+                        .carousel-item
+                            img(src="./img/визиткаBack.png" alt="businessCard").d-block.w-100
                 .card-body
-                    h5.card-title.h3 Task Manager
-                    p.card-text Проект тестового корпоративного планировщика задач. Проект является учебным и предусматривает тестирование работы с cookie и базой данных, с возможностью администратора(начальника) добавлять новые задачи для своих работников, с указазанием даты выполнения, и отслеживанием статуса их выполнения.
+                    h5.card-title.h3 Визитка
+                    p.card-text Проет учебного задания по дизайну визитки.
                 ul.list-group.list-group-flush
-                    li.list-group-item
-                        a(href="").card-link Ссылка на проект отсутсвует
-                    li.list-group-item
-                        a(href="https://github.com/AurovD/Portfolio/tree/master/TaskManager").card-link Github проекта
                     li.list-group-item
                         a(href="#contacts").card-link Заказать свой проект
         .row.p-5.m-0.col-12.contacts.text-white#contacts

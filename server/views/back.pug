@@ -61,8 +61,6 @@ block content
                     p.card-text Проект тестового корпоративного планировщика задач. Проект является учебным и предусматривает тестирование работы с cookie и базой данных MongoDB, с возможностью администратора(начальника) добавлять новые задачи для своих работников, с указазанием даты выполнения, и отслеживанием статуса их выполнения.
                 ul.list-group.list-group-flush
                     li.list-group-item
-                        a(href="").card-link Ссылка на проект отсутсвует
-                    li.list-group-item
                         a(href="https://github.com/AurovD/Portfolio/tree/master/TaskManager").card-link Github проекта
                     li.list-group-item
                         a(href="#contacts").card-link Заказать свой проект
@@ -72,9 +70,25 @@ block content
                     p.card-text React-проект планировщика задач. Созавался в размах курса по react'у использованием базы данных PostrgesSQL и библиотекой Redux.
                 ul.list-group.list-group-flush
                     li.list-group-item
-                        a(href="").card-link Ссылка на проект отсутсвует
-                    li.list-group-item
                         a(href="https://github.com/AurovD/Portfolio/tree/master/Trello").card-link Github проекта
+                    li.list-group-item
+                        a(href="#contacts").card-link Заказать свой проект
+            .card.card-project.mb-4
+                #proj5.carousel.slide(data-ride="carousel").card-img-top
+                    ol.carousel-indicators
+                        li(data-target="#proj5" data-slide-to="0" class="active")
+                        li(data-target="#proj5" data-slide-to="1")
+                    .carousel-inner
+                        .carousel-item.active
+                            img(src="./img/screenWeather.jpg" alt="Weatherman").d-block.w-100
+                        .carousel-item
+                            img(src="./img/screenCurrency.jpg" alt="Weatherman").d-block.w-100
+                .card-body
+                    h5.card-title.h3 Weatherman
+                    p.card-text Практическая работа с api запросами по получению погоды и котировок валюты. Использовались библиотеки React и Redux. Бэкграунд меняется в зависимости от погоды. Если нажать на панель котировок, то появится конвертер.
+                ul.list-group.list-group-flush
+                    li.list-group-item
+                        a(href="https://github.com/AurovD/WeatherMan").card-link Github проекта
                     li.list-group-item
                         a(href="#contacts").card-link Заказать свой проект
         .row.p-5.m-0.col-12.contacts.text-white#contacts
