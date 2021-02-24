@@ -1,10 +1,14 @@
 extends layout
 
 block content
-    form.addProject
-        input(type="text" placeholder="title")
-        input(type="text" placeholder="github link")
-        input(type="text" placeholder="link")
-        input(type="text" placeholder="tags")
-        input(type="file")
-        textarea(placeholder="description")
+    .wrapper
+        form.addProject(action="/api/adding" method="POST" enctype="multipart/form-data")
+            input(type="text" placeholder="title" name="title"  value="kjhk" required)
+            textarea(placeholder="description" name="description" value="kjkhk")
+            input(type="text" placeholder="Github link" name="github")
+            input(type="text" placeholder="link" name="link")
+            input(type="text" placeholder="tags" name="tags" value="#gjhj#gfhjg" required)
+            input(type="file" name="imgs" multiple)
+            input(type="submit" value="Send")
+        script
+            include script.js
