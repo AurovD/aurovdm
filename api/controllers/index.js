@@ -30,7 +30,8 @@ router.post("/adding", parser, async (req, res) => {
         } else if (!req.files) {
             return res.send({ "msg": 'Please select an image to upload' });
         } else {
-            pool.query("CREATE  TABLE IF NOT EXISTS projects( id SERIAL PRIMARY KEY,  title VARCHAR(20), description VARCHAR(100) NOT NULL, github VARCHAR(30), link VARCHAR(30), tags VARCHAR(40)[], img VARCHAR(40)[])");
+            pool.query("CREATE  TABLE IF NOT EXISTS projects( id SERIAL PRIMARY KEY,  title VARCHAR(20), description VARCHAR(100) NOT NULL, github VARCHAR(30), link VARCHAR(30), tags VARCHAR(40)[], img VARCHAR(40)[], date DATE NOT NULL DEFAULT CURRENT_DATE)");
+            pool.query("CREATE  TABLE IF NOT EXISTS tags( id SERIAL PRIMARY KEY,  name VARCHAR(20))");
         }
     });
 });

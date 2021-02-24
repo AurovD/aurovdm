@@ -22,26 +22,19 @@ form.addEventListener("submit", (e) => {
     e.preventDefault();
     e.stopPropagation();
     let body = {};
-    let tags = form.tags.value.split("#");
-    tags.shift();
-    if(!tags.length) {
-        alert("Неправильные тэги")
-    } else {
-        body.description = textarea.value;
-        for (let i = 0; i < form.elements.length; i++) {
-            const el = form.elements[i];
-            if (el.name && el.name !== "imgs") {
-                body[el.name] = el.value;
-            }
+    body.description = textarea.value;
+    for (let i = 0; i < form.elements.length; i++) {
+        const el = form.elements[i];
+        if (el.name && el.name !== "imgs") {
+            body[el.name] = el.value;
         }
-        let fd = new FormData();
-        Array.from(form.imgs.files).forEach((file) => {
-            fd.append('imgs', file)
-        })
-        for (let k in body) {
-            fd.append(k, typeof body[k] === "string" ? body[k] : JSON.stringify(body[k]));
-        }
-        console.log(fd)
-        adding(fd)
     }
+    let fd = new FormData();
+    Array.from(form.imgs.files).forEach((file) => {
+        fd.append('imgs', file)
+    })
+    for (let k in body) {
+        fd.append(k, typeof body[k] === "string" ? body[k] : JSON.stringify(body[k]));
+    }
+    adding(fd)
 })
