@@ -55,7 +55,7 @@ body {
     background: rgba(0,0,0, .6);
 }
 .boxes-box:after, .bannerSecond:after {
-    background: rgba(0,0,0, .4);
+    background: rgba(0,0,0, .5);
 }
 .z-index-1000 {
     z-index: 1000;
@@ -254,6 +254,10 @@ div .dark-blue {
 .darkblue {
     background-color: #1F1F2F !important;
 }
+/*projects*/
+.title {
+    font-size: 25px;
+}
 /*anim*/
 .animate-box {
     opacity: 0;
@@ -324,6 +328,7 @@ div .dark-blue {
 }
 /*projects*/
 .parallelogram {
+    width: 400px;
     position: relative;
     display: flex;
     align-items: center;

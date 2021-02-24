@@ -7,7 +7,7 @@ block content
                 .text.position-absolute.text.z-index-1000
                     h1.display-1.mx-xl-n4 Aurov Dmitry
                     h2.display-4.mx-xl-5.text-warning FullStack Developer
-                a.but.z-index-1000.position-absolute.mb-5.text-center(href="./docs/CV.pdf" download) Скачать CV
+                a.but.z-index-1000.position-absolute.mb-5.text-center(href="/projects") Проекты
         .row.col-12.p-0.m-0.text-white.text-uppercase.lh.position-relative.boxes
             .row.col-lg-6.m-0.p-0
                 .col-6.boxes-box.front.z-index-1000.absbg.animate-box.animated.bottom.d-flex.align-items-center.justify-content-center FrontEnd
@@ -148,17 +148,34 @@ block content
                         .progress
                             .progress-bar.position-relative.rounded.darkblue(role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%")
                                 span.text-white 60%
-        .row.col-12.p-0.m-0.text-uppercase.position-relative.boxes.projects#projects
-            .row.col-12.m-0.p-2.js.d-flex.justify-content-center
-                a.col-xl-4.boxes-box.animate-box.animated.bottom.projects-items(href="/frontend")
-                    img.items-img(src="./img/ipad.png" alt="front")
-                    p.plashka FrontEnd
-                a.col-xl-4.boxes-box.animate-box.animated.bottom.projects-items(href="/backend")
-                    img.items-img(src="./img/project1.png" alt="back")
-                    p.plashka  BackEnd
-                a.col-xl-4.boxes-box.animate-box.animated.bottom.projects-items(href="/design")
-                    img.items-img(src="./img/laptop.png" alt="ux")
-                    p.plashka Design
+        .row.p-0.m-0.col-12.mb-3
+            .row.p-0.m-0#projects
+                .col-12.pl-5
+                    h2.mb-3.display-4 Projects
+                    a(href="/projects") Посмотреть больше &rarr;
+                //a.col-xl-4.boxes-box.animate-box.animated.bottom.projects-items.m-3(href="/backend")
+                //    img.items-img(src="./img/project1.png" alt="back")
+                //    p.plashka  BackEnd
+        .row.ml-3.mr-3.pl-4.d-flex.justify-content-center.pr-4
+            .card.card-project
+                h2.m-3.text-warning.font-weight-light Последний проект
+                #proj5.carousel.slide(data-ride="carousel").card-img-top
+                    ol.carousel-indicators
+                        li(data-target="#proj5" data-slide-to="0" class="active")
+                        li(data-target="#proj5" data-slide-to="1")
+                    .carousel-inner
+                        .carousel-item.active
+                            img(src="./img/screenWeather.jpg" alt="Weatherman").d-block.w-100
+                        .carousel-item
+                            img(src="./img/screenCurrency.jpg" alt="Weatherman").d-block.w-100
+                .card-body
+                    h5.card-title.h3 Weatherman
+                    p.card-text Практическая работа с api запросами по получению погоды и котировок валюты. Использовались библиотеки React и Redux. Бэкграунд меняется в зависимости от погоды. Если нажать на панель котировок, то появится конвертер.
+                ul.list-group.list-group-flush
+                    li.list-group-item
+                        a(href="https://github.com/AurovD/WeatherMan").card-link Github проекта
+                    li.list-group-item
+                        a(href="#contacts").card-link Заказать свой проект
         .row.p-5.m-0.col-12.contacts.text-white#contacts
             .contact-text.text-right.contact-text-line.h4 Контакты
             .contact-text.text-right.contact-text-line tel: +79265411308
