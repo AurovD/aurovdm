@@ -10,40 +10,21 @@ but.addEventListener("click", function() {
 });
 
 
-for (let box of document.querySelectorAll('.bottom')) {
-    let observer = new IntersectionObserver((entries) => {
-        if (entries[0].isIntersecting === true && !entries[0].target.classList.contains("fadeInBottom")) {
-            entries[0].target.classList += " fadeInBottom";
-        }
+function getFade(className, direction) {
+    for (let box of document.querySelectorAll(`.${direction}`)) {
+        let observer = new IntersectionObserver((entries) => {
+            if (entries[0].isIntersecting === true && !entries[0].target.classList.contains(`${className}`)) {
+                entries[0].target.classList += ` ${className}`;
+            }
 
-    }, {threshold: [0.8]});
-    observer.observe(box);
+        }, {threshold: [0.8]});
+        observer.observe(box);
+    }
 }
-for (let box of document.querySelectorAll('.left')) {
-    let observer = new IntersectionObserver((entries) => {
-        if (entries[0].isIntersecting === true && !entries[0].target.classList.contains("fadeInLeft")) {
-            entries[0].target.classList += " fadeInLeft";
-        }
 
-    }, {threshold: [0.8]});
-    observer.observe(box);
-}
-for (let box of document.querySelectorAll('.right')) {
-    let observer = new IntersectionObserver((entries) => {
-        if (entries[0].isIntersecting === true && !entries[0].target.classList.contains("fadeInLeft")) {
-            entries[0].target.classList += " fadeInRight";
-        }
-
-    }, {threshold: [0.8]});
-    observer.observe(box);
-}
-// let projects = document.querySelectorAll(".projects-items");
-// let plashka= document.querySelectorAll(".plashka");
-// projects.forEach((pr, i) => {
-//     pr.addEventListener("click", (event) => {
-//         location.replace(`/${plashka[i].innerText}`);
-//     })
-// });
+getFade("fadeInBottom", "bottom" );
+getFade("fadeInLeft", "left" );
+getFade("fadeInRight", "right" );
 
 let certs = document.querySelectorAll(".cert-img");
 let podlozhka = document.querySelector(".podlozhka");
@@ -67,23 +48,23 @@ podlozhka.addEventListener("click", (event) => {
             img.remove();
     })
 })
-
-document.addEventListener('DOMContentLoaded', () => {
-
-    let toTopBtn = document.querySelector('.btnToTop');
-    const screenHeight = window.innerHeight
-    window.onscroll = function () {
-        if (window.pageYOffset > screenHeight) {
-            toTopBtn.style.display = 'block'
-        } else {
-            toTopBtn.style.display = 'none'
+let topBtn = document.querySelector('.btnToTop');
+if(topBtn) {
+    document.addEventListener('DOMContentLoaded', () => {
+        const screenHeight = window.innerHeight;
+        window.onscroll = function () {
+            if (window.scrollY > screenHeight) {
+                topBtn.style.display = 'block'
+            } else {
+                topBtn.style.display = 'none'
+            }
         }
-    }
-    toTopBtn.addEventListener('click', function () {
-        window.scrollBy({
-            top: -document.documentElement.scrollHeight,
-            behavior: 'smooth'
+        topBtn.addEventListener('click', function () {
+            window.scrollBy({
+                top: -document.documentElement.scrollHeight,
+                behavior: 'smooth'
+            });
         });
     });
-});
+}
 

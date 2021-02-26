@@ -3,7 +3,6 @@ const app = express();
 const server = require("./server/routes/index");
 const api = require("./api/controllers/index");
 
-
 app.use(express.urlencoded({extended: true}));
 app.use(express.json());
 app.use(express.static(__dirname + "/public"));
