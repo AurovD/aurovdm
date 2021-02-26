@@ -5,12 +5,27 @@ html
         meta(charset="utf-8")
         meta(name="viewport" content="width=device-width, initial-scale=1.0")
         meta(http-equiv="X-UA-Compatible" content="ie=edge")
+        meta(name = "description" content = "Сайт портфолио. Аюров Дмитрий. FullStack developer")
+        meta(name = "keywords" content = "sites")
         link(rel='stylesheet', href='/style.css')
         link(rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css")
         link(rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon")
         link(rel="canonical" href="https://getbootstrap.com/docs/4.5/components/carousel/")
         //link(href="/docs/4.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous")
         script(src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous")
+        script(type="application/ld+json").
+            {
+                "@context": "https://aurovd.ru/",
+                "@type": "Portfolio",
+                "name": "Aurov Dmitry - Portfolio",
+                "author":{
+                        "@type": "Person",
+                        "name": "Aurov Dmitry"
+                },
+                "datePublished": "2021-02-24",
+                "description": "Сайт портфолио. Аюров Дмитрий. FullStack developer.",
+                "prepTime": "PT20M"
+            }
     body.p-0.m-0
         .podlozhka
         .container-fluid
