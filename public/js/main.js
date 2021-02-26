@@ -1,11 +1,11 @@
-let but = document.querySelector(".navbar");
-but.addEventListener("click", function() {
+let burger = document.querySelector(".burger");
+let navList = document.querySelector(".navList");
+burger.addEventListener("click", function() {
     this.classList.toggle("active");
-    let panel = this.nextElementSibling;
-    if (panel.style.maxHeight) {
-        panel.style.maxHeight = null;
+    if (navList.style.maxHeight) {
+        navList.style.maxHeight = null;
     } else {
-        panel.style.maxHeight = panel.scrollHeight + "px";
+        navList.style.maxHeight = navList.scrollHeight + "px";
     }
 });
 
