@@ -258,6 +258,22 @@ div .dark-blue {
 .title {
     font-size: 25px;
 }
+.btnToTop {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    display: none;
+    z-index: 22;
+    cursor: pointer;
+    background-color: #343a40;
+    color: #fff;
+    padding: 5px;
+    border-radius: 4px;
+}
+.btnToTop:hover {
+    color: #343a40;
+    background-color: #fff;
+}
 /*anim*/
 .animate-box {
     opacity: 0;
