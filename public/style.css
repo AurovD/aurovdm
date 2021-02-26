@@ -260,7 +260,7 @@ div .dark-blue {
 }
 .btnToTop {
     position: fixed;
-    bottom: 30px;
+    top: 30px;
     right: 30px;
     display: none;
     z-index: 22;
@@ -269,10 +269,6 @@ div .dark-blue {
     color: #fff;
     padding: 5px;
     border-radius: 4px;
-}
-.btnToTop:hover {
-    color: #343a40;
-    background-color: #fff;
 }
 /*anim*/
 .animate-box {
