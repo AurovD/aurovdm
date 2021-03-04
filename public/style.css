@@ -260,7 +260,7 @@ div .dark-blue {
 }
 .btnToTop {
     position: fixed;
-    top: 30px;
+    bottom: 30px;
     right: 30px;
     display: none;
     z-index: 22;

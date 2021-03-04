@@ -23,7 +23,7 @@ form.addEventListener("submit", (e) => {
     e.stopPropagation();
     let body = {};
     body.description = textarea.value;
-    for (let i = 0; i < form.elements.length; i++) {
+    for (let i = 0, length = form.elements.length; i < length; i++) {
         const el = form.elements[i];
         if (el.name && el.name !== "imgs") {
             body[el.name] = el.value;

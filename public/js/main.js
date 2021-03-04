@@ -9,7 +9,6 @@ burger.addEventListener("click", function() {
     }
 });
 
-
 function getFade(className, direction) {
     for (let box of document.querySelectorAll(`.${direction}`)) {
         let observer = new IntersectionObserver((entries) => {
