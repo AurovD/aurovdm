@@ -1,7 +1,7 @@
 extends layout
 
 block content
-    .wrapper
+    .container-fluid.col-md-10.p-0.bg-white.position-relative
         form.addProject(action="/api/adding" method="POST" enctype="multipart/form-data")
             input(type="text" placeholder="title" name="title"  value="kjhk" required)
             textarea(placeholder="description" name="description" value="kjkhk")
