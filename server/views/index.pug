@@ -6,8 +6,10 @@ block content
             .col-12.vh-100.p-md-5.p-sm-5.banner.text-white.z-index-1000.absbg
                 .text.position-absolute.text.z-index-1000
                     h1.display-1.mx-xl-n4 Aurov Dmitry
-                    h2.display-4.mx-xl-5.text-warning FullStack Developer
-                a.but.z-index-1000.position-absolute.mb-5.text-center(href="/projects") Проекты
+                    h2.display-4.mx-xl-5.text-warning Web Developer
+                .z-index-1000.position-absolute.d-flex
+                    a.but.text-center.mr-2(href="/projects") Проекты
+                    a.but.text-center(href="/docs/CV.pdf" download) Скачать CV
         .row.col-12.p-0.m-0.text-white.text-uppercase.lh.position-relative.boxes
             .row.col-lg-6.m-0.p-0
                 .col-6.boxes-box.front.z-index-1000.absbg.animate-box.animated.bottom.d-flex.align-items-center.justify-content-center FrontEnd
@@ -31,10 +33,9 @@ block content
                             | Московский государственный медико-стоматологический университет имени А.И. Евдокимова #[br]
                             strong Клиническая психология
                 #collapseMgmsu.collapse(aria-labelledby="headingMgmsu" data-parent="#accordion")
-                    .card-body.d-flex.flex-sm-row-reverse.flex-column-reverse
-                        .text-box.p-4.grey-box.position-relative
-                            p Факультет клинической психологии был открыт в структуре Московского государственного медико-стоматологического университета в 2001 году. Факультет готовит и выпускает специалистов с высшим профессиональным образованием по специальности 37.05.01 «Клиническая психология».
-                            p Область профессиональной деятельности выпускников Факультета включает исследовательскую и практическую деятельность в сфере клинической психологии. Она направлена на решение комплексных задач психологической диагностики, экспертизы и психологической помощи населению.
+                    .card-body.d-flex
+                        .text-box.p-4.grey-box.position-relative.w-50
+                            p Изучал общую, пато- и клиническую психологию, психотерапию.
             .card
                 .card-header.position-relative.mgtu.animate-box.animated.bottom#headingMgtu
                     h2.mb-0.pl-40px
@@ -42,9 +43,9 @@ block content
                             | Московский государственный технический университет им. Н. Э. Ба́умана (неоконч) #[br]
                             strong Компьютерные системы и сети
                 #collapseMgtu.collapse(aria-labelledby="headingMgtu" data-parent="#accordion")
-                    .card-body.d-flex.flex-sm-row-reverse.flex-column-reverse
-                        .text-box.p-4.grey-box.position-relative
-                            p Кафедра «Компьютерные системы и сети», одна из ведущих кафедр факультета «Информатика и системы управления» МГТУ им. Н.Э. Баумана. На кафедре накоплен богатый научный и педагогический потенциал, работает коллектив опытных преподавателей, cоздана уникальная и современная лабораторная база, функционируют лаборатории Интернета вещей, Компьютерных систем, Облачных технологий, Сетевая лаборатория.
+                    .card-body.d-flex
+                        .text-box.p-4.grey-box.position-relative.w-50
+                            p Пробовал себя на факультете Компьютерных систем и сетей, но понял, что хочу заниматься именно веб-разрботкой.
             .card
                 .card-header.position-relative.ithub.animate-box.animated.bottom#headingIthub
                     h2.mb-0.pl-40px
@@ -52,9 +53,9 @@ block content
                             | Колледж международного уровня IT HUB #[br]
                             strong Веб- и мультимедийная разработка
                 #collapseIthub.collapse(aria-labelledby="headingIthub" data-parent="#accordion")
-                    .card-body.d-flex.flex-sm-row-reverse.flex-column-reverse
-                        .text-box.p-4.grey-box.position-relative
-                            p Веб-разработчик - это программист, который специализируется или специально занимается разработкой приложений для Всемирной паутины с использованием модели клиент-сервер. Приложения обычно используют HTML, CSS и JavaScript на клиенте, PHP, ASP.NET, Python или Java на сервере и http для связи между клиентом и сервером.
+                    .card-body.d-flex
+                        .text-box.p-4.grey-box.position-relative.w-50
+                            p Изучал HTML, CSS, JavaScript, Node.js, основы программирования на Java и PHP, создавал дизайн сайтов на Photoshop и Figma, пробывал себя в гейм-дизайне и создании игр на Unity. Участвовал в двух хакатонах, где вместе со своими командами занимал первое и второе места.
             .card
                 .card-header.position-relative.sert.animate-box.animated.bottom#headingSert
                     h2.mb-0.pl-40px
@@ -159,21 +160,27 @@ block content
         .row.m-3.pl-4.d-flex.justify-content-center.pr-4.mt-0
             .card.card-project
                 h2.m-3.text-warning.font-weight-light Последний проект
-                #proj5.carousel.slide(data-ride="carousel").card-img-top
+                #proj12.carousel.slide(data-ride="carousel").card-img-top
                     ol.carousel-indicators
-                        li(data-target="#proj5" data-slide-to="0" class="active")
-                        li(data-target="#proj5" data-slide-to="1")
+                        li(data-target="#proj12" data-slide-to="0" class="active")
+                        li(data-target="#proj12" data-slide-to="1")
+                        li(data-target="#proj12" data-slide-to="2")
+                        li(data-target="#proj12" data-slide-to="3")
                     .carousel-inner
                         .carousel-item.active
-                            img(src="./img/screenWeather.jpg" alt="Weatherman").d-block.w-100
+                            img(src="./img/spot.png" alt="Spot1").d-block.w-100
                         .carousel-item
-                            img(src="./img/screenCurrency.jpg" alt="Weatherman").d-block.w-100
+                            img(src="./img/spot_login.jpg" alt="Spot2").d-block.w-100
+                        .carousel-item
+                            img(src="./img/spot_profile.png" alt="Spot3").d-block.w-100
+                        .carousel-item
+                            img(src="./img/spot_event.png" alt="Spot3").d-block.w-100
                 .card-body
-                    h5.card-title.h3 Weatherman
-                    p.card-text Практическая работа с api запросами по получению погоды и котировок валюты. Использовались библиотеки React и Redux. Бэкграунд меняется в зависимости от погоды. Если нажать на панель котировок, то появится конвертер.
+                    h5.card-title.h3 Spot
+                    p.card-text Онлайн регистрация на видеоконфреренции.
                 ul.list-group.list-group-flush
                     li.list-group-item
-                        a(href="https://github.com/AurovD/WeatherMan").card-link Github проекта
+                        a(href="https://github.com/AurovD/Spot").card-link Github проекта
                     li.list-group-item
                         a(href="#contacts").card-link Заказать свой проект
         .row.p-5.m-0.col-12.contacts.text-white#contacts

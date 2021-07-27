@@ -69,6 +69,7 @@ body {
     border: 1px solid #fff;
     line-height: 35px;
     bottom: 0;
+    cursor: pointer;
 }
 .but:hover {
     color: white;
