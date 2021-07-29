@@ -47,6 +47,7 @@ podlozhka.addEventListener("click", (event) => {
             img.remove();
     })
 })
+let check = 0;
 let topBtn = document.querySelector('.btnToTop');
 if(topBtn) {
     document.addEventListener('DOMContentLoaded', () => {
