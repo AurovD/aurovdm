@@ -8,8 +8,10 @@ app.use(express.json());
 app.use(express.static(__dirname + "/public"));
 app.set("views", "./server/views");
 app.set("view engine", "pug");
-//jhgjlkhkjhkh
+
 app.use("/", server);
 app.use("/api", api);
+
+module.exports = app;
 
 module.exports = app;
