@@ -13,5 +13,3 @@ app.use("/", server);
 app.use("/api", api);
 
 module.exports = app;
-
-module.exports = app;
