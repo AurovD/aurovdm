@@ -231,6 +231,10 @@ div .dark-blue {
     background: center no-repeat url("./img/croc.svg"), #1F1F2F;
     background-size: 85%;
 }
+.ithub-logo {
+    background: center no-repeat url("./img/colleg.png"), #1F1F2F;
+    background-size: 120%;
+}
 .timeline-label {
     background: #f2f3f7;
     padding: 1.5em;
