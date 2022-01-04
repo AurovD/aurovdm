@@ -107,7 +107,7 @@ body {
 .grey-box {
     background-color: rgba(0,0,0,.1);
 }
-.grey-box::before {
+.grey-box:first-of-type::before {
     content: "";
     position: absolute;
     top: -30px;
